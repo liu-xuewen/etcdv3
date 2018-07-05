@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package pb;
+
+service Server {
+    rpc Test (testReq) returns (testResp);
+}
+
+message testReq {
+    string name = 1;
+}
+
+message testResp {
+    string echo = 1;
+}
